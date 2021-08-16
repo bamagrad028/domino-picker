@@ -51,3 +51,46 @@ for (let index = 0; index < dominoList.length; index += 1) {
 
 // How animation works: https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fimg2.wikia.nocookie.net%2F__cb20131211182757%2Fanimations%2Fimages%2F6%2F64%2FCheshire-Cat-Mini-Flip-Book.gif&f=1&nofb=1
 // asynchronous programming? We'll learn more about this toward the end of the course!
+
+let firstDominoeElement = document.querySelector(".domino")
+console.log(firstDominoeElement)
+
+function showDominoValue(event){
+    if (event.target.textContent.includes("🁥")) {
+        console.log("You clicked on a dominoe")
+    }
+}
+
+
+document.addEventListener("click", showDominoValue) // CallBack Function 
+
+//synchronous (asynchronous programming)
+//a means not synchronous 
+
+let geeseImage = document.querySelector("#geese")
+
+
+
+function onKeyPress (event) {
+        let currentStyles = getComputedStyle(geeseImage)
+        let distanceFromLeft = parseInt(currentStyles.left)
+        let distanceFromTop = parseInt(currentStyles.top)
+       
+ 
+    console.log(event.key)
+    if(event.key === "ArrowRight") {
+        let newDistance = distanceFromLeft + 50
+        geeseImage.style.left = newDistance + "px"
+    }else if (event.key === "ArrowLeft") {
+        let newDistance = distanceFromLeft - 50
+        geeseImage.style.left = newDistance + "px"
+    }else if (event.key === "ArrowDown") {
+        let newDistance = distanceFromTop + 50
+        geeseImage.style.top =newDistance + "px"
+    }else if (event.key === "ArrowUp") {
+       let newDistance = distanceFromTop - 50
+       geeseImage.style.top = newDistance + "px"
+    }
+}
+
+document.addEventListener("keydown", onKeyPress)

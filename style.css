@@ -24,6 +24,7 @@ main > .domino {
     font-size: 5rem;
     transition: transform 0.5s;
     color: rebeccapurple;
+    z-index:2;
     
     /* display: none; */
 }
@@ -42,4 +43,14 @@ main > .domino.selected {
 .hidden {
     display: none;
     /* visibility: hidden; */
+}
+
+#geese {
+    position: absolute;
+   /* pointer-events: none; */
+   z-index:1;
+    top:100px;
+    left: 100px;
+    width: 320px;
+
 }
