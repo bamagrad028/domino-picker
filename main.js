@@ -24,7 +24,7 @@ function getRandomNumber (min, max) { // min and max included
 // Flowers: "💮 🌸 🌷 🌹 🌺 🌻 🌼 🥀 🌱 🌽 🌾 🌰 🌿 🍀 🍁 🍂 🍃 🌵 🌴 🎋 🌲 🌳"
 // Weather: "🌣 ☁ 🌤 🌧 🌨 🌩 🌪"
 // Misc. Shapes: "◖ ◗ ⯊ ⯋ ◐ ◑ ◓ ◒ ◜ ◝ ◞ ◟ ◠ ◡ ◧ ◨ ◩ ◪ 🞔 🞕 🞖 ◸ ◹ ◺ ◿ ◤ ◥ ◣ ◢ ⛋ 🞛 🞚 🞜 ⬖ ⬗ ⬘ ⬙"
-let dominoCharacters = "a b c d e f g".replaceAll(" ", "")
+let dominoCharacters = "🁣 🁤 🁥 🁦 🁧 🁨 🁩 🁪 🁫 🁬 🁭 🁮 🁯 🁰 🁱 🁲 🁳 🁴 🁵 🁶 🁷 🁸 🁹 🁺 🁻 🁼 🁽 🁾 🁿 🂀 🂁 🂂 🂃 🂄 🂅 🂆 🂇 🂈 🂉 🂊 🂋 🂌 🂍 🂎 🂏 🂐 🂑 🂒 🂓".replaceAll(" ", "")
 let dominoList = Array.from(dominoCharacters)
 console.log(dominoList)
 
