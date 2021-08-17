@@ -49,8 +49,9 @@ main > .domino.selected {
     position: absolute;
    /* pointer-events: none; */
    z-index:1;
-    top:100px;
-    left: 100px;
+    top:50px;
+    left: 50px;
     width: 320px;
+    border-radius: 50%;
 
 }
